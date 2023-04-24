@@ -1,7 +1,5 @@
 import axios from "axios";
 
-// import { parks_api_key, parks_api_key_heroku } from "../keys";
-// const parks_api_key = parks_api_key_heroku
 
 const PARKS_BASE_URL = "https://developer.nps.gov/api/v1";
 
