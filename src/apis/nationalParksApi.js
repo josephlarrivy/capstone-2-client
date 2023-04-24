@@ -1,7 +1,7 @@
 import axios from "axios";
 
-// import { parks_api_key } from "../keys";
-const parks_api_key = parks_api_key_heroku
+// import { parks_api_key, parks_api_key_heroku } from "../keys";
+// const parks_api_key = parks_api_key_heroku
 
 const PARKS_BASE_URL = "https://developer.nps.gov/api/v1";
 
@@ -9,7 +9,7 @@ class NParksServiceRequest {
 
   static async makeRequest(endpoint) {
     try {
-      const headers = { "X-Api-Key": parks_api_key };
+      const headers = { "X-Api-Key": 'aQURbVL0l6KSazH3ySz8QZw6ZfblDs0gAWsGhKAm' };
       const method = 'get'
       const url = `${PARKS_BASE_URL}${endpoint}`
       const resp = await axios({ method, url, headers })

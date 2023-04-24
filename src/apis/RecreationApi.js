@@ -1,10 +1,10 @@
-// import { recreation_api_key } from "../keys";
-const recreation_api_key = recreation_api_key_heroku
+// import { recreation_api_key, recreation_api_key_heroku } from "../keys";
+// const recreation_api_key = recreation_api_key_heroku
 import axios from 'axios';
 
 class RecreationAPI {
   constructor() {
-    this.apiKey = recreation_api_key;
+    this.apiKey = 'c11dbfdf-cc78-48d8-b7a4-77062b39b3bb';
     this.baseUrl = 'https://ridb.recreation.gov/api/v1';
   }
 

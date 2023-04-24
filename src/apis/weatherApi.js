@@ -1,4 +1,6 @@
 
+
+
 class weatherAPI {
   constructor(weatherApiKey) {
     this.apiKey = weatherApiKey_heroku;
