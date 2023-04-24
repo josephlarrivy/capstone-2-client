@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 import WeatherAPI from "../apis/weatherApi";
-import { weatherApiKey } from '../keys'
+// import { weatherApiKey } from '../keys'
+const weatherApiKey = weatherApiKey_heroku
 
 import '../css/Weather.css'
 
