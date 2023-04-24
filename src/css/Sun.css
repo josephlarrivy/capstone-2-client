@@ -1,0 +1,99 @@
+.sun-data-container {
+    width: 40%;
+    margin-left: 60%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: none;
+}
+
+.sunrise {
+    width: 30vw;
+    height: 100%;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.sunset {
+    width: 30vw;
+    height: 100%;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+#sunrise-animation {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 50%;
+    position: relative;
+    background: radial-gradient(circle at 50% 50%, #fffd9d 0%, #fcba03 50%, #f44336 100%);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5), 0 5px 15px 0 rgba(0, 0, 0, 0.5);
+}
+#sunset-animation {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 50%;
+    position: relative;
+    background: radial-gradient(circle at 50% 50%, #fffd9d 0%, #fcba03 50%, #f44336 100%);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5), 0 5px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+#sunrise-animation:before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 50%, #fffd9d 0%, #fcba03 50%, #f44336 100%);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5), 0 5px 15px 0 rgba(0, 0, 0, 0.5);
+    animation: sunglow 5s linear infinite;
+}
+#sunset-animation:before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 50%, #fffd9d 0%, #fcba03 50%, #f44336 100%);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5), 0 5px 15px 0 rgba(0, 0, 0, 0.5);
+    animation: sunglow 5s linear infinite;
+}
+
+@keyframes sunglow {
+    0% {
+        transform: scale(0.8);
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(0.8);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

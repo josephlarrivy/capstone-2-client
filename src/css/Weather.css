@@ -1,0 +1,33 @@
+.weather-container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.weather-days-container {
+    width: inherit;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+
+
+.weather-day {
+    text-align: center;
+    align-items: center;
+    min-width: 30vw;
+    height: 25px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.weather-image {
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+    /* background-color: aqua; */
+    /* border-radius: 50%; */
+}

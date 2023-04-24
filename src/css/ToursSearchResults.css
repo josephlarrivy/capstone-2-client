@@ -1,0 +1,84 @@
+#tours-search-results-main-container {
+    margin-bottom: 30px;
+}
+
+#tours-search-results-main-container h1 {
+    text-align: center;
+}
+
+#tours-search-results-items-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 20px;
+}
+
+.tours-search-results-item-container {
+    /* border: 1px solid black; */
+    margin-bottom: 20px;
+}
+
+.tours-search-result-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.tours-search-result-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tours-search-results-info {
+    /* margin-left: 20px; */
+}
+
+.tours-search-results-info h4 {
+    font-size: 18px;
+}
+
+#tours-load-more-search-results {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: large;
+
+    margin-left: 40vw;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+#tours-load-more-search-results:hover {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: large;
+
+    margin-left: 40vw;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+
+
+button {
+    background-color: white;
+    margin-right: 5px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    margin-right: 5px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+}

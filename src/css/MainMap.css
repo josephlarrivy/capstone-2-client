@@ -1,0 +1,80 @@
+.MapContainer {
+    width: inherit;
+    height: inherit;
+}
+
+.leaflet-container {
+    width: inherit;
+    height: inherit;
+    /* height: 94vh; */
+}
+
+.leaflet-popup-content h4 {
+    width: 48vw;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-top: 0px;
+}
+
+.popup {}
+
+.popup-image-div {
+    position: absolute;
+    width: 12vw;
+    height: 10vw;
+    background-color: white;
+    border-radius: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.popup-description-div {
+    width: 34vw;
+    height: 10vw;
+    margin-left: 13vw;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.popup-description-div p {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.leaflet-popup-content-wrapper {
+    display: flex;
+    width: 50vw;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 5px;
+    animation: test;
+    animation-duration: 1s;
+}
+
+@keyframes test {
+    0% {}
+
+    100% {}
+}
+
+.leaflet-popup-content {
+    padding: 10px;
+}
+
+body {
+    /* font-family: Arial, sans-serif; */
+}
+
+.link-info { 
+    /* color: black; */
+    /* text-decoration: none; */
+    /* font-size: 15px; */
+}
