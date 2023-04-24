@@ -1,7 +1,7 @@
 
 class weatherAPI {
   constructor(weatherApiKey) {
-    this.apiKey = weatherApiKey;
+    this.apiKey = weatherApiKey_heroku;
     this.baseURL = "https://api.openweathermap.org/data/2.5/forecast";
   }
 
