@@ -37,9 +37,9 @@ const NavBar = ({token, setToken}) => {
             <NavItem >
               <NavLink to="/">Home</NavLink>
             </NavItem>
-            {/* <NavItem >
+            <NavItem >
               <NavLink to="/map">Map</NavLink>
-            </NavItem> */}
+            </NavItem>
             {/* <NavItem >
               <NavLink to="/gallery">Photo Gallery</NavLink>
             </NavItem> */}
