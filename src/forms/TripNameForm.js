@@ -51,9 +51,11 @@ const TripNameForm = ({ token, setToken, getTrips }) => {
   }
 
   if (!username) {
-    <div id="trip-name-form-container">
-      <h4>Please create an account or log in first</h4>
-    </div>
+    return (
+      <div id="trip-name-form-container">
+        <h4>Please create an account or log in first</h4>
+      </div>
+    )
   }
 
   return (
