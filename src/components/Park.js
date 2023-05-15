@@ -159,10 +159,9 @@ const Park = ({token, setToken}) => {
                 </div>
               : <></>
             }
-            {parkData.description
-              ? <p>{parkData.description}</p>
-              : <></>
-            }
+            {parkData && parkData.description && (
+              <p>{parkData.description}</p>
+            )}
           </div>
         </div>
 
