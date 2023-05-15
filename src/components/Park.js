@@ -125,7 +125,7 @@ const Park = ({token, setToken}) => {
                 type='park'
                 route={`/park/${parkData.parkCode}`}
                 name={parkData.fullName}
-                description={parkData.description}
+                // description={parkData.description}
                 parkcode={parkData.parkCode}
                 latitude={parkData.latitude}
                 longitude={parkData.longitude}
