@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
-import { Link, Navigate, Route, Routes } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from 'react-router';
 
 import '../css/Park.css'
@@ -10,12 +9,11 @@ import Weather from "./Weather";
 
 import Sun from "./Sun";
 import Loading from "./Loading";
-import ImagesDisplayer from "./ImagesDisplayer";
+// import ImagesDisplayer from "./ImagesDisplayer";
 import ImageCollage from "./ImageCollage";
-import AlertsByPark from "./AlertsByPark";
+// import AlertsByPark from "./AlertsByPark";
 
 import NParksServiceRequest from "../apis/nationalParksApi";
-import RecreationAPI from "../apis/RecreationApi";
 import AddToTripDropdown from "./AddToTripDropdown";
 
 
