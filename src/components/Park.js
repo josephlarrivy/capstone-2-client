@@ -98,7 +98,7 @@ const Park = ({token, setToken}) => {
     return (
       <Loading />
     )
-  } else {
+  } else if (parkData.description) {
     return (
       <div id="park">
         <NavBar
