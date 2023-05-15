@@ -98,7 +98,7 @@ const Park = ({token, setToken}) => {
     return (
       <Loading />
     )
-  } else if (parkData.description) {
+  } else {
     return (
       <div id="park">
         <NavBar
@@ -159,12 +159,11 @@ const Park = ({token, setToken}) => {
                 </div>
               : <></>
             }
-            {parkData && (
-              <p>{parkData.description || ''}</p>
-            )}
+            {parkData && parkData.description ? (
+              <p>{parkData.description}</p>
+            ) : null}
           </div>
         </div>
-
         {imagesArray && 
           <ImageCollage imagesArray={imagesArray}/>
         }
@@ -172,7 +171,6 @@ const Park = ({token, setToken}) => {
           ? <AlertsByPark code={parkCode.code} />
           : <></>
         }
-
       </div>
     )
   }
