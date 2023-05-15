@@ -159,9 +159,9 @@ const Park = ({token, setToken}) => {
                 </div>
               : <></>
             }
-            {parkData && parkData.description ? (
+            {parkData && typeof parkData.description !== 'undefined' && (
               <p>{parkData.description}</p>
-            ) : null}
+            )}
           </div>
         </div>
         {imagesArray && 
