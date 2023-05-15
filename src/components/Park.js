@@ -29,7 +29,7 @@ const Park = ({token, setToken}) => {
   const [centerPosition, setCenterPosition] = useState(null)
   const [imagesArray, setImagesArray] = useState(null)
   const [tourLinks, setTourLinks] = useState(null)
-  const [alerts, setAlerts] = useState(null)
+  // const [alerts, setAlerts] = useState(null)
   const [campgrounds, setCampgrounds] = useState(null)
   const [campgroundsToggleState, setCampgroundsToggleState] = useState('Show Campgrounds')
   const [numCampgrounds, setNumCampgrounds] = useState(0)
@@ -65,12 +65,12 @@ const Park = ({token, setToken}) => {
     }
     createTourLinks(parkCode.code)
 
-    const getParkAlerts = async (code) => {
-      const alertsData = await NParksServiceRequest.getAlertsByParkCode(code)
-      // console.log(alertsData)
-      setAlerts(alertsData)
-    }
-    getParkAlerts(parkCode.code)
+    // const getParkAlerts = async (code) => {
+    //   const alertsData = await NParksServiceRequest.getAlertsByParkCode(code)
+    //   // console.log(alertsData)
+    //   setAlerts(alertsData)
+    // }
+    // getParkAlerts(parkCode.code)
 
     const getCampgrounds = async (code) => {
       const campgroundsData = await NParksServiceRequest.getCampgroundsByPark(code)
@@ -167,10 +167,10 @@ const Park = ({token, setToken}) => {
         {imagesArray && 
           <ImageCollage imagesArray={imagesArray}/>
         }
-        {alerts
+        {/* {alerts
           ? <AlertsByPark code={parkCode.code} />
           : <></>
-        }
+        } */}
       </div>
     )
   }
