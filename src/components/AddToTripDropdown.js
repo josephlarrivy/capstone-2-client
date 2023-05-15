@@ -49,7 +49,7 @@ const AddToTripDropdown = ({ type, route, name, description, parkcode, latitude,
 
   const handleSelect = async (e) => {
     const id = e.target.value
-    const response = await BackendApiRequest.addTripItem(type, route, name, description, parkcode, latitude, longitude, id)
+    const response = await BackendApiRequest.addTripItem(type, route, name, description='', parkcode, latitude, longitude, id)
     setIsOpen(false);
   };
 
